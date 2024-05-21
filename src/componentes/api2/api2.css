@@ -1,0 +1,32 @@
+.recipe-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .recipe-item {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease; /* Agrega una transición para animar el hover */
+  }
+  
+  .recipe-item:hover {
+    transform: translateY(-5px); /* Eleva ligeramente el elemento al pasar el cursor */
+  }
+  
+  .recipe-item img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease; /* Agrega una transición para animar el hover */
+  }
+  
+  .recipe-item:hover img {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño de la imagen al pasar el cursor */
+  }
+  
+  .recipe-item p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  

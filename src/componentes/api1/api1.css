@@ -1,0 +1,47 @@
+/* Definir la animación */
+@keyframes hoverAnimation {
+  from {
+    background-color: #0621b9; /* Color de fondo inicial */
+  }
+  to {
+    background-color: #da7c00; /* Color de fondo al pasar el cursor */
+  }
+}
+
+/* Estilo del Navbar */
+#navbar {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: flex-start; /* Alinear en la parte superior */
+  position: fixed; /* Fijar en la parte superior de la ventana */
+  width: 100%; /* Ocupar el ancho completo */
+  top: 0; /* Alinear en la parte superior de la ventana */
+}
+
+/* Aplicar la animación a los botones */
+#navbar button {
+  background-color: #0b58dd;
+  color: rgb(245, 217, 2);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Mantener la transición de color de fondo */
+  animation-duration: 0.3s; /* Duración de la animación */
+  animation-fill-mode: forwards; /* Mantener el último estado de la animación */
+  margin: 0 10px; /* Añadir espacio horizontal entre los botones */
+}
+
+/* Definir la animación para el evento hover */
+#navbar button:hover {
+  animation-name: hoverAnimation; /* Nombre de la animación */
+}
+
+/* Estilo adicional para el estado de enfoque */
+#navbar button:focus {
+  outline: none;
+  background-color: #999;
+}

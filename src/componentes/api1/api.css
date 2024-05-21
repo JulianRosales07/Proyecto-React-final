@@ -1,0 +1,77 @@
+/* Estilo del contenedor principal */
+.api-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    margin-top: 120px;
+    animation: fadeIn 0.5s ease; /* Animación de entrada */
+  }
+  
+  /* Estilo del contenedor del componente PizzaImage */
+  .pizza-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  /* Estilo del input */
+  .pizza-image-input {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Estilo del mensaje de error */
+  .pizza-image-error {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilo del resultado de la imagen */
+  .pizza-image-result {
+    text-align: center;
+  }
+  
+  /* Estilo de la imagen */
+  .pizza-image-result img {
+    max-width: 50px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeInImg 0.5s ease; /* Animación de entrada para la imagen */
+  }
+  
+  /* Estilo del título */
+  .pizza-image-result h3 {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  
+  /* Keyframes para la animación de entrada */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Keyframes para la animación de entrada de la imagen */
+  @keyframes fadeInImg {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  

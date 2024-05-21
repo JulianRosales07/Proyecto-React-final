@@ -1,0 +1,107 @@
+
+
+
+
+/* Estilos para el contenido principal */
+.main-content {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 35px;
+}
+
+/* Estilos para la sección de bienvenida */
+.welcome-section {
+    background-color: transparent;
+    padding: 50px;
+    text-align: center;
+}
+.welcome-section h2 {
+    font-size: 40px;
+    color: #000000;
+}
+.welcome-section p {
+    font-size: 25px;
+    color: #2c02ff;
+}
+/* Estilos para la sección de las API */
+.api-section {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.api-section h3 {
+    font-size: 24px;
+    color: #000000;
+}
+
+.api-section p {
+    font-size: 16px;
+    color: #000000;
+}
+
+/* Estilos para las imágenes */
+.imgGastronomia, .imgReceta {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para la sección de platos gastronómicos */
+.world-cuisine-section {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.world-cuisine-section h2 {
+    font-size: 28px;
+    color: #333;
+}
+
+.world-cuisine-section p {
+    font-size: 16px;
+    color: #666;
+}
+
+.world-cuisine-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.world-cuisine-section li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+    position: relative;
+    padding-left: 20px;
+}
+
+.world-cuisine-section li:before {
+    content: '\2022';
+    position: absolute;
+    left: 0;
+    color: #333;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Aplicar animación a todas las secciones */
+section {
+    animation: fadeIn 1s ease-in-out;
+}
